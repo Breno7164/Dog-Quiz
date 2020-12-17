@@ -25,7 +25,8 @@ var pontos = 0;
 var botao;
 var status1 = true;
 
-var racas = ["Beagle", "Border Collie", "Bull Terrier", "Corgi", "Dachshund", "Doberman", "Golden Retriver", "Husky Siberiano", "Labrador", "Pastor Alemão", "Pincher", "Pitbull", "São Bernardo", "Shih Tzu", "Yorkshire"];
+var racas = ["Beagle", "Border Collie", "Bull Terrier", "Corgi", "Dachshund", "Doberman", "Golden Retriver", 
+"Husky Siberiano", "Labrador", "Pastor Alemão", "Pincher", "Pitbull", "São Bernardo", "Shih Tzu", "Yorkshire"];
 
 function preload(){
   img = loadImage('fundo_inicial.jpg');
@@ -245,7 +246,7 @@ function draw(){
     
     if(mouseX > xopcao1 && mouseX < xopcao1 + largura && mouseY > yopcao1 && mouseY < yopcao1 + altura){
       if(mouseIsPressed && status1 == true){
-        if(count == 1 || count == 2 || count == 4 || count == 7 || count ==         9 || count == 10 || count == 13 || count == 14){
+        if(count == 1 || count == 2 || count == 4 || count == 7 || count == 9 || count == 10 || count == 13 || count == 14){
           pontos++;
         }
         rect(xopcao1, yopcao1, largura, altura, 15);
@@ -256,7 +257,7 @@ function draw(){
     
     if(mouseIsPressed && mouseX > xopcao2 && mouseX < xopcao2 + largura && mouseY > yopcao2 && mouseY < yopcao2 + altura){
       if(mouseIsPressed && status1 == true){
-        if(count == 3 || count == 5 || count == 6 || count == 8 || count ==         11 || count == 12 || count == 15){
+        if(count == 3 || count == 5 || count == 6 || count == 8 || count == 11 || count == 12 || count == 15){
           pontos++;
         }
         rect(xopcao2, yopcao2, largura, altura, 15);
@@ -294,7 +295,7 @@ function draw(){
     text("Este jogo educacional é recomendado para os alunos do 3º ano do ensino fundamental. Desenvolve a habilidade: EF03CI06, que ajuda a aperfeiçoar a identificação de grupos de animais. O jogo é um quiz, seu objetivo é adivinhar a qual raça o cachorro mostrado pertence", 90, 90, 415, 415);
     
     //voltar
-    if (mouseX > xmenu2 && mouseX < xmenu2 + largura && mouseY >           ymenu3 && mouseY < ymenu3 + altura){
+    if (mouseX > xmenu2 && mouseX < xmenu2 + largura && mouseY > ymenu3 && mouseY < ymenu3 + altura){
       stroke(200);
       fill(0, 200, 480);
       rect(xmenu2, ymenu3, largura, altura, 15);
