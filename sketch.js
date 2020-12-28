@@ -293,6 +293,7 @@ function draw(){
     textStyle(BOLD);
     textAlign(CENTER);
     text("Este jogo educacional é recomendado para os alunos do 3º ano do ensino fundamental. Desenvolve a habilidade: EF03CI06, que ajuda a aperfeiçoar a identificação de grupos de animais. O jogo é um quiz, seu objetivo é adivinhar a qual raça o cachorro mostrado pertence", 90, 90, 415, 415);
+    text("Criado por Breno Barbosa.", 50, 300, 500, 500);
     
     //voltar
     if (mouseX > xmenu2 && mouseX < xmenu2 + largura && mouseY > ymenu3 && mouseY < ymenu3 + altura){
